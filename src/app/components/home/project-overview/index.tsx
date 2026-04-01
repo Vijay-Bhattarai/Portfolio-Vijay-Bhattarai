@@ -38,10 +38,19 @@ const ProjectOverview = () => {
                                 })}
                             </div>
                         </div>
+                        <div className="text-center py-8">
+                            <iframe 
+                                src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" 
+                                className="mx-auto w-full max-w-2xl h-48 border-0 bg-transparent" 
+                            />
+                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
+
+
     )
 }
 

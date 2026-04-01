@@ -29,4 +29,4 @@ View at http://localhost:3000
 - Theme persistence
 - CV download (vijay-bhattarai.pdf)
 
-Deploy with Vercel/Netlify.
+
