@@ -1,42 +1,32 @@
-# Typefolio - NextJs Template
+# Vijay Vhattarai - Portfolio
 
-#### Preview
+Personal portfolio website built with Next.js 16 + Tailwind CSS v4 + TypeScript.
 
- - [Demo](https://themewagon.github.io/Typefolio/)
+## About
+Modern portfolio showcasing my work as AI Engineer, Automation & CRM Systems Specialist, Digital Marketing Executive with 6+ years experience. Features hero section, about me, experience timeline, featured projects, education, CV download, contact form.
 
-#### Download
- - [Download from ThemeWagon](https://themewagon.com/themes/Typefolio/)
+## What's Made
+- Next.js 16.1.0 with Turbopack
+- Tailwind CSS v4 (light/dark theme toggle w/ localStorage)
+- TypeScript
+- Dynamic data API routes (/api/page-data, /api/featured-work)
+- Responsive design
+- Custom icons & images
+- Hot reload dev server (`npm run dev`)
 
-## Getting Started
-
-1. Clone Repository
-```
-git clone https://github.com/themewagon/Typefolio.git
-```
-2. Install Dependencies
-```
-npm i
-```
-3. Run the development server:
-
+## Quick Start
 ```bash
+cd Typefolio-1.0.0
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+View at http://localhost:3000
 
-## Author 
-```
-Design and code is completely written by Getnextjstemplates and Wrappixel team. 
-```
+## Features Added
+- Dark mode toggle (white text)
+- Social media icons (GitHub, Twitter/X, LinkedIn)
+- Custom profile data
+- Theme persistence
+- CV download (vijay-bhattarai.pdf)
 
-## License
-
- - Design and Code is Copyright &copy; [Getnextjstemplates](https://getnextjstemplates.com)
- - Licensed cover under [MIT]
- - Distributed by [ThemeWagon](https://themewagon.com)
-
+Deploy with Vercel/Netlify.

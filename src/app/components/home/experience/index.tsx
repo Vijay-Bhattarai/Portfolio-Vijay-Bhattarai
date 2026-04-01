@@ -1,3 +1,4 @@
+
 "use client";
 import Image from "next/image"
 import { useEffect, useState } from "react";
@@ -41,23 +42,25 @@ const Experience = () => {
                                         <div className="flex-1 ml-12">
                                             <div className="flex items-center gap-3 mb-4">
                                                 <Image src={value?.icon} alt="icon" width={32} height={19} />
-                                                <h5 className="text-xl font-semibold">{value?.role}</h5>
+                                                <h5 className="text-xl font-semibold text-primary dark:text-white">{value?.role}</h5>
                                             </div>
                                             <div className="flex flex-col sm:flex-row gap-4 mb-6">
                                                 <div className="bg-primary/5 border border-primary/20 rounded-lg px-4 py-2 min-w-[140px]">
-                                                    <p className="text-primary font-medium text-sm">{value?.startYear} - {value?.endYear}</p>
+                                                    <p className="text-primary dark:text-white font-medium text-sm">{value?.startYear} - {value?.endYear}</p>
                                                 </div>
-                                                <div className="flex items-center gap-2 text-primary/70">
-                                                    <p className="text-sm">{value?.location}</p>
+                                                <div className="flex items-center gap-2 text-primary/70 dark:text-white/70">
+                                                    <p className="text-sm dark:text-white">{value?.location}</p>
                                                 </div>
                                             </div>
+
                                             <ul className="space-y-3">
                                                 {value?.bulletPoints?.map((point: any, i: any) => (
                                                     <li key={i} className="flex items-start gap-3 text-base text-secondary">
                                                         <span className="w-2 h-2 bg-primary rounded-full mt-2.5 flex-shrink-0"></span>
-                                                        <span>{point}</span>
+                                                        <span className="dark:text-white">{point}</span>
                                                     </li>
                                                 ))}
+
                                             </ul>
                                         </div>
                                     </div>
