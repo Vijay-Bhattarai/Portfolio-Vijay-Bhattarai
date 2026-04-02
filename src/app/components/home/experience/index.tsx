@@ -41,7 +41,7 @@ const Experience = () => {
                                         </div>
                                         <div className="flex-1 ml-12">
                                             <div className="flex items-center gap-3 mb-4">
-                                                <Image src={value?.icon} alt="icon" width={32} height={19} />
+                                                <Image src={value?.icon} alt="icon" width={32} height={19} unoptimized />
                                                 <h5 className="text-xl font-semibold text-primary dark:text-white">{value?.role}</h5>
                                             </div>
                                             <div className="flex flex-col sm:flex-row gap-4 mb-6">

@@ -5,17 +5,17 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
     const socialIcon = [
         {
-            img: "/images/icon/twitter new logo.jpg",
+            img: "/images/icon/X_icon.svg.png",
             href: "https://x.com/vhattarai_0",
             icon: "Twitter"
         },
         {
-            img: "/images/icon/Black-LinkedIn-icon-in-flat-design-on-transparent-PNG.avif",
+            img: "/images/icon/LinkedIn-Icon-Logo.wine.svg",
             href: "https://www.linkedin.com/in/bijaybhattarai-815a841a5/",
             icon: "LinkedIn"
         },
         {
-            img: "/images/icon/Github image.png",
+            img: "/images/icon/github images.svg",
             href: "https://github.com/Vijay-Bhattarai",
             icon: "GitHub"
         }
@@ -25,7 +25,7 @@ const HeroSection = () => {
             <div className="container">
                 <div className="">
                     <div className="w-full h-72">
-                        <Image src="/images/hero-sec/banner-bg-img.png" alt="banner-img" width={1080} height={267} className="w-full h-full object-cover" />
+                        <Image src="/images/hero-sec/banner-bg-img.png" alt="banner-img" width={1080} height={267} className="w-full h-full object-cover" loading="eager" />
                     </div>
                     <div className="border-x border-primary/10">
                         <div className="relative flex flex-col xs:flex-row items-center xs:items-start justify-center xs:justify-between max-w-3xl mx-auto gap-10 xs:gap-3 px-4 sm:px-7 pt-22 pb-8 sm:pb-12">
@@ -46,9 +46,13 @@ const HeroSection = () => {
                             <div className="flex flex-col md:flex-row items-center gap-4">
                                 <div className="flex items-center gap-2">
                                     {socialIcon?.map((value, index) => {
+                                        const isTwitter = value.icon === "Twitter";
+                                        const isLinkedIn = value.icon === "LinkedIn";
+                                        const isGitHub = value.icon === "GitHub";
+                                        const filterClass = isGitHub || isTwitter ? "filter brightness-0 invert" : "";
                                         return (
                                             <Link href={value?.href} key={index} className="w-fit p-3 sm:p-4 hover:bg-primary/5 border border-primary/10 rounded-full hover:scale-110 transition-transform">
-                                                <Image src={value?.img} alt={value?.icon} width={36} height={36} className="filter brightness-0 invert" />
+                                                <img src={value?.img} alt={value?.icon} width={36} height={36} className={filterClass} />
                                             </Link>
                                         )
                                     })}
@@ -65,6 +69,7 @@ const HeroSection = () => {
                                                 width={14}
                                                 height={14}
                                                 className="filter brightness-0 invert"
+                                                unoptimized
                                             />
                                             <span className="text-sm sm:text-base font-semibold text-white">Contact Me</span>
                                         </span>

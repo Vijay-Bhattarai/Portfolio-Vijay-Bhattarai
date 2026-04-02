@@ -3,8 +3,17 @@ import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react";
 
+interface FeatureWorkItem {
+    title: string;
+    description: string;
+    roles: string[];
+    image: string;
+    company: string;
+    companyLink: string;
+}
+
 const FeaturedWork = () => {
-    const [featureWork, setFeatureWork] = useState(null);
+    const [featureWork, setFeatureWork] = useState<FeatureWorkItem[] | null>(null);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -42,13 +51,12 @@ const FeaturedWork = () => {
                                     key={index}
                                     className={`group flex flex-col gap-2 p-4 sm:p-6 ${isRightCol ? 'md:border-l md:border-primary/10' : ''}`}
                                 >
-                                    <Link href="#" className="w-full h-64 overflow-hidden rounded-lg">
+                                    <Link href="#" className="w-full h-64 overflow-hidden rounded-lg relative">
                                         <Image
                                             src={value?.image}
                                             alt="Project"
-                                            width={400}
-                                            height={256}
-                                            className="w-full h-full object-cover group-hover:scale-105 transition-all duration-300 ease-in-out"
+                                            fill
+                                            className="object-cover group-hover:scale-105 transition-all duration-300 ease-in-out"
                                         />
                                     </Link>
                                     <div className="flex flex-col gap-1 px-1 hidden">

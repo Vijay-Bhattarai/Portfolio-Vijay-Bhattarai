@@ -20,7 +20,7 @@ icon: "/images/icon/founder.png",
         ]
     },
     {
-        icon: "/images/icon/digital marketing.png",
+        icon: "/images/icon/digital-marketing.png",
         role: "Digital Marketing & CRM Specialist",
         company: "CodAvatar (KrispCall)",
         location: "Kathmandu/Singapore",
@@ -37,7 +37,7 @@ icon: "/images/icon/founder.png",
         ]
     },
     {
-        icon: "/images/icon/computer s teacher.png",
+        icon: "/images/icon/computerteacher.png",
         role: "Computer Science Teacher",
         company: "Sunsari Crystal Academy",
         location: "Itahari, Sunsari, Nepal",
@@ -50,7 +50,7 @@ icon: "/images/icon/founder.png",
         ]
     },
     {
-        icon: "/images/icon/jr developer.png",
+        icon: "/images/icon/jr-developer.png",
         role: "Junior Frontend Developer (React Intern)",
         company: "Hunchha Digital Agency",
         location: "Itahari-8, Nepal",
