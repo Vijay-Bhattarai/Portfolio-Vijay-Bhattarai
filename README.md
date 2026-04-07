@@ -14,13 +14,24 @@ Modern portfolio showcasing my work as AI Engineer, Automation & CRM Systems Spe
 - Custom icons & images
 - Hot reload dev server (`npm run dev`)
 
-## Quick Start
-```bash
+## Quick Start (Windows/Linux/Mac)
+
+**Terminal (PowerShell/CMD):**
+```
 cd Typefolio-1.0.0
 npm install
 npm run dev
 ```
-View at http://localhost:3000
+**Or one-liner (Git Bash/PowerShell 7+):**
+```
+cd Typefolio-1.0.0 && npm run dev
+```
+**Explicit CMD:**
+```
+cmd /c "cd /d Typefolio-1.0.0 & npm run dev"
+```
+
+View at http://localhost:3000 (Network: http://192.168.1.66:3000)
 
 ## Features Added
 - Dark mode toggle (white text)
