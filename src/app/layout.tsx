@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/layout/header";
 import Footer from "./components/layout/footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   variable: "--font-inter-sans",
@@ -25,6 +26,7 @@ export default function RootLayout({
         <Header/>
         {children}
         <Footer/>
+        <Analytics />
       </body>
     </html>
   );
