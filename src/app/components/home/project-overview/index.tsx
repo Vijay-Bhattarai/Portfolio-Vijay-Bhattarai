@@ -20,6 +20,7 @@ const ProjectOverview = () => {
 
         fetchData()
     }, [])
+
     return (
         <section>
             <div className="container">
@@ -41,16 +42,13 @@ const ProjectOverview = () => {
                         <div className="text-center py-8">
                             <iframe 
                                 src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" 
-                                className="mx-auto w-full max-w-2xl h-48 border-0 bg-transparent" 
+className="mx-auto w-full max-w-[22rem] xs:max-w-[28rem] sm:max-w-2xl h-36 xs:h-44 sm:h-52 lg:h-56 border-0 bg-transparent rounded-lg" 
                             />
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
-
-
     )
 }
 
