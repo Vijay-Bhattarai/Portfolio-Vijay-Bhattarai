@@ -1,57 +1,44 @@
- "use client"
+"use client"
 import Image from "next/image"
 import Link from "next/link";
 
-interface SocialIcon {
-  img: string;
-  href: string;
-  icon: string;
-}
-
-const socialIcons: SocialIcon[] = [
+const socialIcons = [
   {
-    img: "/images/icon/X_icon.svg.png",
+    img: "/images/icon/twitter-icon.svg",
     href: "https://x.com/vhattarai_0",
-    icon: "X"
+    icon: "twitter"
   },
   {
     img: "/images/icon/LinkedIn-Icon-Logo.wine.svg",
     href: "https://www.linkedin.com/in/bijaybhattarai-815a841a5/",
-    icon: "LinkedIn"
+    icon: "linkedin"
   },
   {
     img: "/images/icon/github-image.png",
     href: "https://github.com/Vijay-Bhattarai",
-    icon: "GitHub"
+    icon: "github"
   }
 ];
 
 const SocialIcons = () => {
-  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>, iconName: string) => {
-    const target = e.currentTarget;
-    target.style.display = 'none';
-    target.parentElement!.innerHTML = iconName;
-  };
-
   return (
-    <div className="flex flex-wrap items-center justify-center gap-2 min-w-[120px]">
-      {socialIcons.map((value, index) => (
+    <div className="flex items-center gap-4">
+      {socialIcons.map((icon, index) => (
         <Link 
-          key={index} 
-          href={value.href} 
-          className="flex items-center justify-center p-2 sm:p-3 hover:bg-primary/10 border border-primary/20 hover:border-primary/50 rounded-full hover:scale-105 transition-all duration-200 min-w-[36px] min-h-[36px] sm:min-w-[40px] sm:min-h-[40px] shadow-sm hover:shadow-md" 
+          key={index}
+          href={icon.href}
+          className="group"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm overflow-hidden border border-white/50 dark:border-slate-800/50">
+          <div className="w-12 h-12 rounded-full shadow-lg group-hover:shadow-xl bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm border border-white/50 dark:border-slate-700/50 flex items-center justify-center hover:scale-110 transition-all duration-300 hover:-translate-y-1">
             <Image 
-              src={value.img} 
-              alt={value.icon} 
+              src={icon.img} 
+              alt={icon.icon} 
               width={24} 
               height={24} 
-              className="w-5 h-5 sm:w-6 sm:h-6 object-contain" 
+              className="w-6 h-6 object-contain brightness-0 invert dark:invert-0 drop-shadow-sm" 
               unoptimized 
-              onError={(e) => handleImageError(e, value.icon)}
             />
           </div>
         </Link>
