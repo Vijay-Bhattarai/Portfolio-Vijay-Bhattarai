@@ -36,8 +36,8 @@ const FeaturedWork = () => {
                 <div className="border-x border-primary/10">
                     <div className="flex flex-col max-w-3xl mx-auto py-10 px-4 sm:px-7">
                         <div className="flex flex-col xs:flex-row gap-5 items-center justify-between">
-                            <p className="text-sm tracking-[2px] text-primary uppercase font-medium">Featured work</p>
-                            <Link href="/cv/vijay-bhattarai.pdf" target="_blank" download="Vijay-Bhattarai-CV.pdf" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-semibold py-3 px-5 rounded-full bg-gradient-to-r from-violet-500 to-orange-500 hover:from-violet-600 hover:to-orange-600 text-white shadow-lg hover:shadow-xl transition-all duration-300">
+<p className="text-sm tracking-[2px] text-primary uppercase font-medium">Featured work</p>
+                            <Link href="/cv/Vijay_Bhattarai_CV.pdf" target="_blank" download="Vijay_Bhattarai_CV.pdf" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-semibold py-3 px-5 rounded-full bg-gradient-to-r from-violet-500 to-orange-500 hover:from-violet-600 hover:to-orange-600 text-white shadow-lg hover:shadow-xl transition-all duration-300">
                                 📄 Download & View My CV
                             </Link>
                         </div>
